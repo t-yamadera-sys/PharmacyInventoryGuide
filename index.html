@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>薬局在庫管理の重要タスク</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fdfbf7; /* Light warm neutral */
+        }
+        .task-card {
+            transition: all 0.3s ease;
+        }
+        .task-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header -->
+    <header class="bg-teal-700 shadow-lg py-6 mb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <h1 class="text-3xl font-bold">💊 薬局在庫管理の重要タスクガイド</h1>
+            <p class="mt-1 text-teal-200">効率的な発注と在庫最適化のための4つの主要なモニタリング項目</p>
+        </div>
+    </header>
+
+    <!-- Main Content: Task Grid -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-10">
+            <h2 class="text-2xl font-bold text-slate-800 border-b-2 border-amber-400 pb-2 inline-block">業務別タスク詳細</h2>
+            <p class="text-slate-600 mt-4">以下の4つのタスクは、欠品を防ぎ、過剰在庫を抑制し、業務効率を高めるために不可欠です。</p>
+        </div>
+
+        <!-- Task Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+            <!-- Task 1: 発注提案リストのモニタリング -->
+            <div class="task-card bg-white rounded-2xl shadow-xl p-6 border-t-4 border-amber-500">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl text-amber-500">📋</span>
+                    <h3 class="font-extrabold text-xl text-slate-800">発注提案リストのモニタリング</h3>
+                </div>
+                
+                <!-- Purpose -->
+                <div class="mb-4 p-3 rounded-lg bg-amber-50 border-l-4 border-amber-400">
+                    <p class="font-bold text-amber-700 text-sm">目的:</p>
+                    <p class="text-sm mt-1">発注そのものだけでなく、**発注判断をしやすくするための整理**</p>
+                </div>
+                
+                <!-- Frequency -->
+                <div class="mb-4">
+                    <p class="font-bold text-slate-600 text-sm">頻度:</p>
+                    <p class="text-base font-medium">可能な限り頻繁に実施</p>
+                </div>
+
+                <!-- Actions -->
+                <div>
+                    <p class="font-bold text-slate-600 text-sm mb-2">実施する事:</p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside pl-2">
+                        <li>発注判断を行い、実際に発注する。</li>
+                        <li>**今後も発注しない品目**は、提案リストから外す設定（発注除外設定など）を行う。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 2: 実在庫のモニタリング -->
+            <div class="task-card bg-white rounded-2xl shadow-xl p-6 border-t-4 border-teal-500">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl text-teal-500">👀</span>
+                    <h3 class="font-extrabold text-xl text-slate-800">実在庫のモニタリング</h3>
+                </div>
+                
+                <!-- Purpose -->
+                <div class="mb-4 p-3 rounded-lg bg-teal-50 border-l-4 border-teal-400">
+                    <p class="font-bold text-teal-700 text-sm">目的:</p>
+                    <p class="text-sm mt-1">発注提案リストには上がらないが、**発注すべき品目を見つける**</p>
+                </div>
+                
+                <!-- Frequency -->
+                <div class="mb-4">
+                    <p class="font-bold text-slate-600 text-sm">頻度:</p>
+                    <p class="text-base font-medium">可能な限り頻繁に実施</p>
+                </div>
+
+                <!-- Actions -->
+                <div>
+                    <p class="font-bold text-slate-600 text-sm mb-2">実施する事:</p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside pl-2">
+                        <li>特にバラ錠包装がある品目について、**PTPの実在庫を目視で確認**する。</li>
+                        <li>システム在庫と実在庫に差異がないか検証する。</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Task 3: 一包化予製に関する在庫管理 -->
+            <div class="task-card bg-white rounded-2xl shadow-xl p-6 border-t-4 border-amber-500">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl text-amber-500">🔄</span>
+                    <h3 class="font-extrabold text-xl text-slate-800">一包化予製の在庫管理</h3>
+                </div>
+                
+                <!-- Purpose -->
+                <div class="mb-4 p-3 rounded-lg bg-amber-50 border-l-4 border-amber-400">
+                    <p class="font-bold text-amber-700 text-sm">目的:</p>
+                    <p class="text-sm mt-1">**理論在庫と使用可能な実在庫のずれを小さくする**</p>
+                </div>
+                
+                <!-- Frequency -->
+                <div class="mb-4">
+                    <p class="font-bold text-slate-600 text-sm">頻度:</p>
+                    <p class="text-base font-medium">随時</p>
+                </div>
+
+                <!-- Actions -->
+                <div>
+                    <p class="font-bold text-slate-600 text-sm mb-2">実施する事:</p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside pl-2">
+                        <li>予製を作成する前に、**在庫の確認と確保**を徹底する。</li>
+                        <li>処方内容変更で使用しなかった予製を、**迅速に使用可能な状態**（バラ在庫）に戻す。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Task 4: 発注点のモニタリング -->
+            <div class="task-card bg-white rounded-2xl shadow-xl p-6 border-t-4 border-teal-500">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl text-teal-500">🚨</span>
+                    <h3 class="font-extrabold text-xl text-slate-800">発注点のモニタリング</h3>
+                </div>
+                
+                <!-- Purpose -->
+                <div class="mb-4 p-3 rounded-lg bg-teal-50 border-l-4 border-teal-400">
+                    <p class="font-bold text-teal-700 text-sm">目的:</p>
+                    <p class="text-sm mt-1">**過剰在庫にならず、かつ欠品を防ぐ**ための最適なバランスを見つける</p>
+                </div>
+                
+                <!-- Frequency -->
+                <div class="mb-4">
+                    <p class="font-bold text-slate-600 text-sm">頻度:</p>
+                    <p class="text-base font-medium">随時</p>
+                </div>
+
+                <!-- Actions -->
+                <div>
+                    <p class="font-bold text-slate-600 text-sm mb-2">実施する事:</p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc list-inside pl-2">
+                        <li>**在庫金額や欠品数**の推移を定期的にチェックする。</li>
+                        <li>これらの指標を見ながら、**安全在庫日数**を状況に応じて適切に調整する。</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div> <!-- End of Task Cards Grid -->
+        
+        <section class="mt-12 mb-12 p-8 bg-slate-100 rounded-xl border border-slate-200">
+            <h3 class="text-xl font-bold text-slate-800 mb-3">総括: なぜモニタリングが重要か</h3>
+            <p class="text-slate-600">
+                これらのタスクは、単なるルーティンワークではなく、在庫情報を**経営判断に活かす**ための活動です。
+                発注提案リストの整備は判断の速度を上げ、実在庫の確認は隠れたリスク（欠品）を防ぎます。
+                また、発注点や予製在庫の管理は、キャッシュフローと患者サービス品質を直接向上させます。
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs">
+            <p>© 2025 Pharmacy Inventory Management Guide</p>
+        </div>
+    </footer>
+</body>
+</html>
